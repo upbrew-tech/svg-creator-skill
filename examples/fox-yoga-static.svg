@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="svg-title">
+  <title id="svg-title">Fox Doing Yoga - Draft</title>
+  <defs>
+    <linearGradient id="bgG" x1="0" y1="0" x2="0" y2="1" color-interpolation="linearRGB">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="40%" stop-color="#fde68a"/>
+      <stop offset="80%" stop-color="#d9f99d"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+    <radialGradient id="foxBody" cx="0.5" cy="0.3" r="0.6" color-interpolation="linearRGB">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="70%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </radialGradient>
+    <radialGradient id="foxBelly" cx="0.5" cy="0.35" r="0.55" color-interpolation="linearRGB">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="80%" stop-color="#fed7aa"/>
+      <stop offset="100%" stop-color="#fdba74"/>
+    </radialGradient>
+    <radialGradient id="foxHead" cx="0.4" cy="0.35" r="0.6" color-interpolation="linearRGB">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="60%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </radialGradient>
+    <filter id="sf" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="linearRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="b"/>
+      <feOffset in="b" dx="2" dy="5" result="o"/>
+      <feFlood flood-color="#1a1a4e" flood-opacity="0.2" result="c"/>
+      <feComposite in="c" in2="o" operator="in" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgG)"/>
+  <!-- Ground -->
+  <ellipse cx="400" cy="530" rx="350" ry="40" fill="#86efac" opacity="0.4"/>
+  <ellipse cx="400" cy="530" rx="200" ry="20" fill="#4ade80" opacity="0.3"/>
+  <!-- Yoga mat -->
+  <ellipse cx="400" cy="520" rx="120" ry="15" fill="#a78bfa" opacity="0.6"/>
+  <ellipse cx="400" cy="518" rx="115" ry="12" fill="#c4b5fd" opacity="0.5"/>
+  <!-- Shadow -->
+  <ellipse cx="400" cy="518" rx="60" ry="10" fill="#1a1a4e" opacity="0.15"/>
+
+  <g filter="url(#sf)">
+    <!-- TAIL -->
+    <path d="M430,420 Q500,380 520,340 Q540,300 510,310 Q480,320 460,370 Q450,400 430,420" fill="#ea580c"/>
+    <path d="M520,340 Q540,300 510,310 Q500,318 515,335Z" fill="#fff7ed"/>
+
+    <!-- Standing leg -->
+    <line x1="400" y1="420" x2="400" y2="510" stroke="#ea580c" stroke-width="22" stroke-linecap="round"/>
+    <ellipse cx="400" cy="515" rx="18" ry="8" fill="#c2410c"/>
+    <circle cx="400" cy="500" r="11" fill="#ea580c"/>
+
+    <!-- Bent leg (tree pose) -->
+    <line x1="390" y1="420" x2="360" y2="455" stroke="#ea580c" stroke-width="20" stroke-linecap="round"/>
+    <line x1="360" y1="455" x2="385" y2="435" stroke="#ea580c" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="360" cy="455" r="10" fill="#ea580c"/>
+    <ellipse cx="385" cy="432" rx="12" ry="8" fill="#c2410c" transform="rotate(30, 385, 432)"/>
+
+    <!-- TORSO -->
+    <ellipse cx="400" cy="370" rx="50" ry="65" fill="url(#foxBody)"/>
+    <ellipse cx="400" cy="380" rx="35" ry="45" fill="url(#foxBelly)"/>
+
+    <!-- Left arm -->
+    <line x1="370" y1="330" x2="350" y2="270" stroke="#ea580c" stroke-width="16" stroke-linecap="round"/>
+    <line x1="350" y1="270" x2="385" y2="230" stroke="#ea580c" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="370" cy="330" r="9" fill="#ea580c"/>
+    <circle cx="350" cy="270" r="7" fill="#ea580c"/>
+    <circle cx="385" cy="228" r="10" fill="#c2410c"/>
+
+    <!-- Right arm -->
+    <line x1="430" y1="330" x2="450" y2="270" stroke="#ea580c" stroke-width="16" stroke-linecap="round"/>
+    <line x1="450" y1="270" x2="415" y2="230" stroke="#ea580c" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="430" cy="330" r="9" fill="#ea580c"/>
+    <circle cx="450" cy="270" r="7" fill="#ea580c"/>
+    <circle cx="415" cy="228" r="10" fill="#c2410c"/>
+
+    <!-- Paws touching -->
+    <ellipse cx="400" cy="225" rx="18" ry="12" fill="#c2410c"/>
+
+    <!-- HEAD -->
+    <ellipse cx="400" cy="280" rx="42" ry="38" fill="url(#foxHead)"/>
+    <ellipse cx="400" cy="290" rx="28" ry="25" fill="#fff7ed"/>
+
+    <!-- Ears -->
+    <polygon points="365,260 355,210 385,250" fill="#ea580c"/>
+    <polygon points="370,255 362,220 384,248" fill="#fed7aa"/>
+    <polygon points="435,260 445,210 415,250" fill="#ea580c"/>
+    <polygon points="430,255 438,220 416,248" fill="#fed7aa"/>
+
+    <!-- Eyes (closed, meditating) -->
+    <path d="M382,278 Q388,272 394,278" fill="none" stroke="#451a03" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M406,278 Q412,272 418,278" fill="none" stroke="#451a03" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <ellipse cx="400" cy="293" rx="6" ry="4" fill="#451a03"/>
+    <ellipse cx="398" cy="292" rx="2" ry="1.2" fill="#78350f" opacity="0.5"/>
+
+    <!-- Mouth -->
+    <path d="M394,298 Q400,303 406,298" fill="none" stroke="#78350f" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Whiskers -->
+    <line x1="375" y1="290" x2="350" y2="285" stroke="#d97706" stroke-width="1" opacity="0.5"/>
+    <line x1="375" y1="295" x2="348" y2="295" stroke="#d97706" stroke-width="1" opacity="0.5"/>
+    <line x1="425" y1="290" x2="450" y2="285" stroke="#d97706" stroke-width="1" opacity="0.5"/>
+    <line x1="425" y1="295" x2="452" y2="295" stroke="#d97706" stroke-width="1" opacity="0.5"/>
+  </g>
+</svg>
