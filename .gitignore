@@ -4,3 +4,25 @@ __pycache__/
 node_modules/
 *.skill
 svg_preview.png
+
+# --- credentials (added by projects audit 2026-07-29) ---
+# Never commit these. Client configs like google-services.json /
+# GoogleService-Info.plist are deliberately NOT listed - they ship in the app.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+*.p8
+*.pem
+*.jks
+*.keystore
+key.properties
+*adminsdk*.json
+*service-account*.json
+*serviceAccount*.json
+# --- end credentials ---
